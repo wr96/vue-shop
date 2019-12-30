@@ -13,9 +13,9 @@ const routes = [
 const router = new VueRouter({
   routes
 })
-//挂在路由导航守卫
+// 挂在路由导航守卫
 router.beforeEach((to, from, next) => {
-  if (to.path == '/login') {
+  if (to.path === '/login') {
     return next()
   } else {
     const tokenStr = sessionStorage.getItem('token')
