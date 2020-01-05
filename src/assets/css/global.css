@@ -22,3 +22,6 @@ body,
 .el-pagination {
     margin-top: 10px;
 }
+.el-cascader-menu__wrap {
+    height: 200px !important;
+}
